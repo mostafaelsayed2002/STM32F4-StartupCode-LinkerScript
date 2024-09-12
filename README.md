@@ -19,7 +19,7 @@ This project aims to implement startup code and a linker script specifically for
    make all
    ```
 
-### Flashing the Code to the Nucleo Board
+### Debugging and Flashing the Code
 
 1. **Install OpenOCD:**:
    Download OpenOCD using Homebrew:
@@ -34,27 +34,25 @@ This project aims to implement startup code and a linker script specifically for
    ```bash
    openocd -f st_nucleo_f4.cfg
    ```
-
-### Debugging and Flashing the Code
-
-1. **Launch GDB Client:**:
+   
+4. **Launch GDB Client:**:
    Start the GDB client to interact with the OpenOCD server:
    ```bash
    arm-none-eabi-gdb
    ```
-2. **Connect to OpenOCD Server:**:
+5. **Connect to OpenOCD Server:**:
     Connect GDB to the OpenOCD server with:
    ```bash
    target remote localhost:3333
    ```
 
-3. **Flash the Code:**
+6. **Flash the Code:**
    Use the following commands to flash the code:
    ```bash
    monitor reset init
    monitor flash write_image erase final.elf
    ```
-4. **Run the Code:**
+7. **Run the Code:**
    After flashing, run the code with:
    ```bash
    monitor reset halt
