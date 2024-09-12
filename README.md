@@ -52,6 +52,7 @@ This project aims to implement startup code and a linker script specifically for
    monitor reset init
    monitor flash write_image erase final.elf
    ```
+   
 7. **Run the Code:**
    After flashing, run the code with:
    ```bash
