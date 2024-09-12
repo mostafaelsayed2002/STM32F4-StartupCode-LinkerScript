@@ -1,4 +1,3 @@
-#include <stdint.h>
 #include "RCC_interface.h"
 #include "GPIO_interface.h"
 
