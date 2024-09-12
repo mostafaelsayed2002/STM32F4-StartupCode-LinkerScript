@@ -58,5 +58,5 @@ This project aims to implement startup code and a linker script specifically for
    ```bash
    monitor reset halt
    monitor resume
-  ```
+ 
 
